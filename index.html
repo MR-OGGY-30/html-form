@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML forms</title>
+  <!-- adding favicon -->
+  <link type="image/jpg" rel="icon" href="images/html5.jpg">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Project -->
+
+  <form action="/action_page.php" target="_self" method="get" autocomplete="on">
+    <h4>Tell about yourself -</h4>
+    <label for="input1">First Name :</label><br>
+    <input name="First Name" id="input1" type="text" placeholder="Chandan"  required autofocus><br>
+    <label for="input2">Middle Name:</label><br>
+    <input name="Middle Name" id="input2" type="text" placeholder="Kumar"><br>
+    <label for="input3">Last Name :</label><br>
+    <input name="Last Name" id="input3" type="text" placeholder="Barman"><br>
+   
+    <!--output example-->
+    <label for="age">Set your age ~</label>
+    <input name="age" id="age" type="range" max="100" min="0" value="30">
+    <output id="x"></output>
+   
+    <h4>Choose your favorite web language -</h4>
+    <input name="fav_lang" id="radio1" type="radio" value="HTML">
+    <label for="radio1">HTML</label><br>
+    <input name="fav_lang" id="radio2" type="radio" value="CSS">
+    <label for="radio2">css</label><br>
+    <input name="fav_lang" id="radio3" type="radio" value="Java Script">
+    <label for="radio3">Java Script</label><br>
+    
+    <h4>Which veichels do you have -</h4>
+    <input name="veichel" value="4 wheeler" type="checkbox">
+    <label for="veichel">4 wheeler</label><br>
+    <input name="veichel" value="Bike" type="checkbox">
+    <label for="veichel">Bike</label><br>
+    <input name="veichel" value="Bicycle" type="checkbox">
+    <label for="veichel">Bicycle</label><br>
+    
+    
+    <!--use select attribute for dropdown list-->
+    <h4>Dropdown list example:</h4>
+    <label for="fruit">Select your favorite fruit ~</label>
+    <select name="fruit" id="fruit" size="1">
+      <option value="no selected">select</option>
+      <option value="mango">mango</option>
+      <option value="jackfruit">jackfruit</option>
+      <option value="guava">guava</option>
+      <option value="apple">apple</option>
+    </select><br>
+    <!--use select attribute for dropdown list multiple select-->
+    <h4>Dropdown list example (multiple select):</h4>
+    <label for="fruit">Select your favorite fruit ~</label>
+    <select name="fruit" id="fruit" size="1" multiple>
+      <option value="no selected">select</option>
+      <option value="mango">mango</option>
+      <option value="jackfruit">jackfruit</option>
+      <option value="guava">guava</option>
+      <option value="apple">apple</option>
+    </select><br>
+    
+    <!--The <textarea> element defines a multi-line input field (a text area):-->
+    <!--it is also example of of fieldset and legend-->
+    <h4>Textarea fieldset and legend example:</h4>
+    <label for="massage">User massage ~</label>
+    <fieldset>
+      <legend>Massage box</legend>
+    <textarea name="massage" id="massage"></textarea>
+    <!-- dimension of textarea are in css -->
+    </fieldset>
+    <br>Here are the different input types you can use in HTML:
+    <h4>Here are the different input types you can use in HTML:</h4>
+    
+    <label for="color">choose the color</label>
+    <input id="color" type="color"><br>
+    <label for="date">choose the date</label>
+    <input id="date" type="date"><br>
+    <label for="datetime-local">set local date and time</label>
+    <input id="datetime-local" type="datetime-local"><br>
+    <label for="email">put your email</label>
+    <input id="email" type="email"><br>
+    <label for="file">select file</label>
+    <input id="file" type="file"><br>
+    <label for="hidden">hidden</label>
+    <input id="hidden" type="hidden"><br>
+    <label for="image">image</label>
+    <input id="image" type="image" src="/images/html5.jpg"><br>
+    <label for="month">month</label>
+    <input id="month" type="month"><br>
+    <label for="number">number</label>
+    <input id="number" type="number"><br>
+    <label for="password">password</label>
+    <input id="password" type="password"><br>
+    
+    <label for="search">search</label>
+    <input id="search" type="search"><br>
+    <label for="tel">tel</label>
+    <input id="tel" type="tel"><br>
+    <label for="time">time</label>
+    <input id="time" type="time"><br>
+    <label for="url">url</label>
+    <input id="url" type="url"><br>
+    <label for="week">week</label>
+    <input id="week" type="week"><br>
+    
+    
+    <label for="reset">reset</label>
+    <input id="reset" type="reset"><br>
+    <input type="submit" onclick="alert('Thank you for your valueable time')">
+    <!-- <button type="submit" onclick="alert('Thank you for your valueable time')">Submit</button> -->
+  </form>
+  
+  
+  
+  <script src="main.js"></script>
+</body>
+</html>
