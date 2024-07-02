@@ -1,0 +1,23 @@
+body {
+    font-size: 15pt;
+    background-color: lightcyan;
+    /* color: sandybrown; */
+}
+fieldset{
+  width: 90%;
+  height: 250px;
+}
+textarea{
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  background-color: darkseagreen;
+  color: darkred;
+}
+h4{
+  color: darkcyan;
+}
+#image{
+  height: 50px;
+  width: 50px;
+}
